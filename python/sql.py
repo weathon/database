@@ -2,7 +2,7 @@
 u"""
 这是主程序的数据库逻辑处理和链接程序
 创建时间：2018年12月20日13:39:39
-版本：1.0.1(版本控制已经同步至GitHub)
+版本：1.0.3(版本控制已经同步至GitHub)
 由于众多哭的支持兼容性，PY2还是PY3暂未确定
 """
 
@@ -10,7 +10,7 @@ def checkchar(string):#检测非法字符，防止sql注入
 	i=string
 	for i in string:
 		pass
-	return i#返回，若无非法字符或者成功转义，返回字符串，
+	return i#返回，1表示允许，0表示拒绝
 	
 #数据库实现:SQLServer
 import pymssql
