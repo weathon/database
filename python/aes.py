@@ -17,3 +17,7 @@ def hash(string):
 	md5.update(string)
 	return md5.hexdigest()
 	
+if __name__=="__main__":
+	while 1:
+		print eval(raw_input(">"))
+	

@@ -29,3 +29,7 @@ class main():
 
 def backup():#备份数据库(不是备份图片)
 	pass
+	
+if __name__=="__main__":
+	while 1:
+		print eval(raw_input(">"))
