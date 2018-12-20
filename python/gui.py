@@ -5,6 +5,12 @@ u"""
 版本：1.0.0(版本控制已经同步至GitHub)
 由于众多库的支持兼容性，PY2还是PY3暂未确定
 """
+#coding:utf-8
+import htmlPy
+
+web_app = htmlPy.WebAppGUI(title=u"文档信息管理系统", maximized=True)
+web_app.url = u"http://127.0.0.1/"
+web_app.start()
 
 if __name__=="__main__":
 	while 1:

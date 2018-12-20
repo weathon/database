@@ -8,7 +8,7 @@ u"""
 
 def checkchar(string):#检测非法字符，防止sql注入，但不完善(由于只是怕用户自己误操作，不考虑攻击)，需谨慎使用，后期可能考虑base64
 	i=[]
-	wordlist=['"',"'","\\","and","or","="," "]#危险字符，
+	wordlist=['"',"'",chr(92),chr(47),"and","or","="," ",")","(",";","*","!","@","#","$","%","^","&"]#危险字符
 	for char in wordlist:
 		if char in string:
 			i.append(char)
