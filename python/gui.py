@@ -9,7 +9,7 @@ u"""
 import htmlPy
 
 web_app = htmlPy.WebAppGUI(title=u"文档信息管理系统", maximized=True)
-web_app.url = u"http://127.0.0.1/"
+web_app.url = u"http://127.0.0.1:2333/"
 web_app.start()
 
 if __name__=="__main__":
